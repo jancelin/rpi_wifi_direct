@@ -1,0 +1,9 @@
+#!/bin/sh -e
+if [ ! -e /root/firstboot_done ]; then
+	touch /root/firstboot_done
+	if [ -e /root/firstboot.sh ]; then
+		/root/firstboot.sh
+	fi
+fi
+sudo /etc/init.d/isc-dhcp-server restart
+exit 0
