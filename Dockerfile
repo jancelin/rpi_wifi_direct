@@ -19,4 +19,4 @@ ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD interfaces /etc/network/interfaces
 ADD dhcpd.conf /etc/dhcp/dhcpd.conf
 ADD hostapd /etc/default/hostapd
-
+ADD rc.local /etc/rc.local
