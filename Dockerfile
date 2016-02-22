@@ -18,5 +18,5 @@ RUN chmod 755 /usr/sbin/hostapd
 ADD hostpad.conf /etc/hostapd/hostpad.conf
 ADD interfaces /etc/network/interfaces
 ADD dhcpd.conf /etc/dhcp/dhcpd.conf
-ADD hostapd /etc/default/hostapd
+ADD hostpad /etc/default/hostpad
 ADD rc.local /etc/rc.local
