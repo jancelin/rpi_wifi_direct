@@ -15,7 +15,7 @@ RUN ln -sf /usr/sbin/hostapd.edimax /usr/sbin/hostapd
 RUN chown root.root /usr/sbin/hostapd
 RUN chmod 755 /usr/sbin/hostapd
 
-ADD hostapd.conf /etc/hostapd/hostapd.conf
+ADD hostpad.conf /etc/hostapd/hostpad.conf
 ADD interfaces /etc/network/interfaces
 ADD dhcpd.conf /etc/dhcp/dhcpd.conf
 ADD hostapd /etc/default/hostapd
