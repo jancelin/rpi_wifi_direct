@@ -16,3 +16,6 @@ RUN chown root.root /usr/sbin/hostapd
 RUN chmod 755 /usr/sbin/hostapd
 
 ADD hostapd.conf /etc/hostapd/hostapd.conf
+ADD interfaces /etc/network/interfaces
+
+
