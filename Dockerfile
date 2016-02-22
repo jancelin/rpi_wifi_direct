@@ -5,7 +5,7 @@ ENV  DEBIAN_FRONTEND noninteractive
 RUN  dpkg-divert --local --rename --add /sbin/initctl
 
 RUN apt-get -y update
-RUN  apt-get install -y hostapd unzip wget
+RUN  apt-get install -y hostapd unzip wget isc-dhcp-server
 
 RUN wget http://www.daveconroy.com/wp3/wp-content/uploads/2013/07/hostapd.zip
 RUN unzip hostapd.zip
@@ -17,5 +17,6 @@ RUN chmod 755 /usr/sbin/hostapd
 
 ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD interfaces /etc/network/interfaces
+ADD dhcpd.conf /etc/dhcp/dhcpd.conf
 
 
