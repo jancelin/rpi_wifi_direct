@@ -32,7 +32,7 @@ wget -P /etc/dhcp/dhcpd.conf https://github.com/jancelin/rpi_wfi_direct_edimax/b
 mv /etc/default/hostapd /etc/default/hostapd.bak
 wget -P /etc/default/hostapd https://github.com/jancelin/rpi_wfi_direct_edimax/blob/master/hostapd
 
-mv rc.local /etc/rc.local
+mv rc.local /etc/rc.local.bak
 wget -P /etc/rc.local https://github.com/jancelin/rpi_wfi_direct_edimax/blob/master/rc.local
 
 
