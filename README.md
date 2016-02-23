@@ -1,18 +1,23 @@
+Comment créer une connexion wifi direct entre votre Raspberry et un pc, tablette, smartphone, ...
+
 Installation du wifi direct avec dongle wifi edimax sur raspberry pi 
 
- copier ce fichier sur le rpi ou le télécharger  : 
- 
-  > wget -P /home/pi https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/install_wifi.sh
+* Connecter sa raspberry pi à internet via ethernet et brancher votre dongle Edimax
 
- atttribuer droit execution:
- 
-  > chmod +x /home/pi/install_wifi.sh
+* Booter et connecter vous en SSH
 
- Run:
+* Télécharger le script:
  
-  > sh /home/pi/install_wifi.sh
+```wget -P /home/pi https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/install_wifi.sh```
+
+ * Atttribuer droit execution:
+ 
+```chmod +x /home/pi/install_wifi.sh```
+
+ * Run:
+ 
+```sh /home/pi/install_wifi.sh```
    
- Reboot:
-  > reboot
+ * Reboot 
   
-  Le signal wifi direct "GeoPoppy" est maintenant disponible 
+  Le signal wifi direct "GeoPoppy" est maintenant disponible. ip =  10.10.0.25
