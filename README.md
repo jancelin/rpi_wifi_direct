@@ -1,6 +1,13 @@
+Script d'installation du wifi direct avec dongle wifi edimax sur raspberry pi 
 
+ copier ce fichier sur le rpi ou télécharger le : 
+   wget -P /home/pi https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/install_wifi.sh
 
-docker build -t wifi_direct git://github.com/jancelin/rpi_wfi_direct_edimax
+ atttribuer droit execution:
+   chmod +x /home/pi/install_wifi.sh
 
-
-docker run --restart="always" --name "wifi_direct" -d -t wifi_direct
+ Run:
+   sh /home/pi/install_wifi.sh
+   
+ Reboot:
+   reboot
