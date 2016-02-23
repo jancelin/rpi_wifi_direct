@@ -22,12 +22,16 @@ chmod 755 /usr/sbin/hostapd
 
 mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf.bak
 wget -P /etc/hostapd/hostapd.conf https://github.com/jancelin/rpi_wfi_direct_edimax/blob/master/hostapd.conf
-mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf.bak
+
+mv /etc/network/interfaces /etc/network/interfaces.bak
 wget -P /etc/network/interfaces https://github.com/jancelin/rpi_wfi_direct_edimax/blob/master/interfaces
+
 mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bak
 wget -P /etc/dhcp/dhcpd.conf https://github.com/jancelin/rpi_wfi_direct_edimax/blob/master/dhcpd.conf
+
 mv /etc/default/hostapd /etc/default/hostapd.bak
 wget -P /etc/default/hostapd https://github.com/jancelin/rpi_wfi_direct_edimax/blob/master/hostapd
+
 mv rc.local /etc/rc.local
 wget -P /etc/rc.local https://github.com/jancelin/rpi_wfi_direct_edimax/blob/master/rc.local
 
