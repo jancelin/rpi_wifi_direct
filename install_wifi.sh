@@ -42,7 +42,7 @@ wget -P /etc/dhcp https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edim
 mv /etc/default/hostapd /etc/default/hostapd.bak
 wget -P /etc/default https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/hostapd
 
-mv rc.local /etc/rc.local.bak
+mv /etc/rc.local /etc/rc.local.bak
 wget -P /etc https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/rc.local
 
 
