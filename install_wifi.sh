@@ -9,6 +9,7 @@
 #
 #
 #-----------------------------------------------------------
+sudo apt-get -y update
 sudo  apt-get install -y hostapd unzip wget nano isc-dhcp-server
 
  wget http://www.daveconroy.com/wp3/wp-content/uploads/2013/07/hostapd.zip
