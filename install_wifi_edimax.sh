@@ -43,6 +43,9 @@ mv /etc/default/hostapd /etc/default/hostapd.bak &&
 wget -P /etc/default https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/hostapd &&
 
 mv /etc/rc.local /etc/rc.local.bak &&
-wget -P /etc https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/rc.local
+wget -P /etc https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/rc.local &&
+
+sudo hostapd -B /etc/hostapd/hostapd.conf &&
+sudo /etc/init.d/isc-dhcp-server restart
 
 
