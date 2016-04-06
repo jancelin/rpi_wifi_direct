@@ -7,10 +7,10 @@
 #   wget -P /home/pi https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/install_wifi_edimax.sh
 #
 # atttribuer droit execution:
-#   chmod +x /home/pi/install_wifi.sh
+#   chmod +x /home/pi/install_wifi_edimax.sh
 #
 # Run:
-#   sh /home/pi/install_wifi.sh
+#   sh /home/pi/install_wifi_edimax.sh
 #-----------------------------------------------------------
 sudo apt-get -y update &&
 
