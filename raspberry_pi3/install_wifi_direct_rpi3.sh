@@ -1,5 +1,5 @@
 #!/bin/sh 
-## wget -P /home/pirate https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/raspberry_pi3/install_wifi_direct_rpi3.sh; chmod +x /home/pirate/install_wifi_direct_rpi3.sh; bash +x /home/pirate/install_wifi_direct_rpi3.sh
+## wget -P /home/pirate https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/raspberry_pi3/install_wifi_direct_rpi3.sh; chmod +x /home/pirate/install_wifi_direct_rpi3.sh; sh /home/pirate/install_wifi_direct_rpi3.sh
 
 
 
