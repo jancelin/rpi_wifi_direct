@@ -24,4 +24,4 @@ sudo sh -c "iptables-save > /etc/iptables.ipv4.nat" &&
 sudo mv /etc/rc.local /etc/rc.local.bak &&
 wget -P /etc https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/raspberry_pi3/rc.local &&
 sudo service hostapd start &&
-sudo service hostapd start
+sudo service dnsmasq start
