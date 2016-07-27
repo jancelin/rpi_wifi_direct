@@ -28,5 +28,5 @@ wget -P /etc https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/r
 chmod +x  /etc/rc.local &&
 sudo service hostapd start 
 sudo service dnsmasq start
-sleep 3
-sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf 
+
+#sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf 
