@@ -25,6 +25,10 @@ ________________________________________________________
 
 ________________________________________________________
 
-**Full project "GéoPoppy" a nano-server GIS at https://github.com/jancelin/geo-poppy/blob/master/install/README_install_geopoppy.md**
+**Full project "GéoPoppy" a nano-server GIS at
+
+https://github.com/jancelin/geo-poppy/blob/master/install/README_install_geopoppy.md**
+
+https://github.com/jancelin/geo-poppy
 
 
