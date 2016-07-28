@@ -1,6 +1,6 @@
 ***Wifi direct Raspberry Pi 3***
 
-scripted for this method: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
+scripted of this method: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
 
 Use with Hypriot OS Barbossa (include Docker): https://downloads.hypriot.com/hypriotos-rpi-v0.8.0.img.zip
 
