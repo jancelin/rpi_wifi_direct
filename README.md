@@ -22,3 +22,9 @@ ________________________________________________________
 * ip of raspberry pi wifi : 172.24.1.1
 * hotplug ethernet
 * hotspot wifi
+
+________________________________________________________
+
+**Full project "GéoPoppy" a nano-server GIS at https://github.com/jancelin/geo-poppy/blob/master/install/README_install_geopoppy.md**
+
+
