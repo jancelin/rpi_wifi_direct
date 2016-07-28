@@ -4,7 +4,7 @@
 # Script d'installation du wifi direct avec dongle wifi edimax sur raspberry pi 
 #
 # copier ce fichier sur le rpi ou télécharger le : 
-#   wget -P /home/pi https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/install_wifi_edimax.sh
+#   wget -P /home/pi https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/PI2/install_wifi_edimax.sh
 #
 # atttribuer droit execution:
 #   chmod +x /home/pi/install_wifi_edimax.sh
@@ -31,19 +31,19 @@ chown root.root /usr/sbin/hostapd &&
 chmod 755 /usr/sbin/hostapd &&
 
 mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf.bak &&
-wget -P /etc/hostapd https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/hostapd.conf &&
+wget -P /etc/hostapd https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/PI2/hostapd.conf &&
 
 mv /etc/network/interfaces /etc/network/interfaces.bak &&
-wget -P /etc/network https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/interfaces &&
+wget -P /etc/network https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/PI2/interfaces &&
 
 mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bak &&
-wget -P /etc/dhcp https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/dhcpd.conf &&
+wget -P /etc/dhcp https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/PI2/dhcpd.conf &&
 
 mv /etc/default/hostapd /etc/default/hostapd.bak &&
-wget -P /etc/default https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/hostapd &&
+wget -P /etc/default https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/PI2/hostapd &&
 
 mv /etc/rc.local /etc/rc.local.bak &&
-wget -P /etc https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/rc.local &&
+wget -P /etc https://raw.githubusercontent.com/jancelin/rpi_wfi_direct_edimax/master/PI2/rc.local &&
 
 sudo hostapd -B /etc/hostapd/hostapd.conf &&
 sudo /etc/init.d/isc-dhcp-server restart
