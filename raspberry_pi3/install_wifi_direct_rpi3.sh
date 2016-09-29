@@ -4,7 +4,7 @@
 
 sudo apt-get update && 
 #sudo apt-get upgrade &&
-sudo apt-get install dnsmasq hostapd &&
+sudo apt-get install -y dnsmasq hostapd &&
 wget --no-check-certificate -P /etc https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/raspberry_pi3/dhcpcd.conf &&
 wget --no-check-certificate -P /etc/network/interfaces.d https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/raspberry_pi3/wlan0 &&
 sudo service dhcpcd restart &&
