@@ -2,7 +2,7 @@
 
 Scripted by this method: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
 
-Working with Debian Hypriot OS Barbossa (include Docker): https://downloads.hypriot.com/hypriotos-rpi-v0.8.0.img.zip
+Working with Debian Hypriot OS (include Docker): https://downloads.hypriot.com
 
 * connect to raspberry pi 3 with ssh
 * run commands
