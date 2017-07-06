@@ -1,4 +1,4 @@
-***Wifi direct Raspberry Pi 3***
+***Hotspot Wifi direct Raspberry Pi 3***
 
 Scripted by this method: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
 
