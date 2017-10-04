@@ -7,5 +7,5 @@ iface wlan0 inet static
 #    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 #Accessing Internet from Pi using USB Tethering of Android
-allow-hotplug usb0
-iface usb0 inet dhcp
+#allow-hotplug usb0
+#iface usb0 inet dhcp
