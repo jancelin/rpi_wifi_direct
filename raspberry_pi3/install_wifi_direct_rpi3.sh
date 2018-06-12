@@ -24,7 +24,7 @@ sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -
 sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT 
 sleep 5
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat" &&
-sudo mv /etc/rc.local /etc/rc.local.bak &&
+#sudo mv /etc/rc.local /etc/rc.local.bak &&
 sudo wget --no-check-certificate -P /etc https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/raspberry_pi3/rc.local &&
 sudo chmod +x  /etc/rc.local &&
 sudo service hostapd start 
