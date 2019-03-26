@@ -26,6 +26,9 @@ sudo iptables -A FORWARD -i usb0 -o wlan0 -m state --state RELATED,ESTABLISHED -
 sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT 
 sudo iptables -A FORWARD -i wlan0 -o usb0 -j ACCEPT 
 # use bluetooth : bnep0
+#sudo iptables -t nat -A POSTROUTING -o bnep0 -j MASQUERADE  
+#sudo iptables -A FORWARD -i bnep0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+#sudo iptables -A FORWARD -i wlan0 -o bnep0 -j ACCEPT 
 sleep 5
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat" &&
 #sudo mv /etc/rc.local /etc/rc.local.bak &&
