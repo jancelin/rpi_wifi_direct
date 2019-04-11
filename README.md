@@ -1,6 +1,10 @@
 ***Hotspot Wifi direct Raspberry Pi 3***
 
-Scripted by this method: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
+Scripted by this method: 
+
+https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
+
+https://goozenlab.com/blog/2019/03/hostapd-buster/
 
 Working with Debian Hypriot OS (include Docker): https://downloads.hypriot.com
 
