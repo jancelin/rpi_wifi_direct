@@ -1,5 +1,6 @@
-allow-hotplug wlan0  
-iface wlan0 inet static  
+auto wlan0  
+iface wlan0 inet static
+    post-up /usr/sbin/hostapd -B /etc/hostapd/hostapd.conf
     address 172.24.1.1
     netmask 255.255.255.0
     network 172.24.1.0
