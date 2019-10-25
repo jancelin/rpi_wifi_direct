@@ -1,0 +1,7 @@
+[Match]
+Name=br0
+
+[Network]
+Address=192.168.10.100/24
+Gateway=192.168.10.1
+DNS=8.8.8.8
