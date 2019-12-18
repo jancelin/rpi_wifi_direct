@@ -18,13 +18,18 @@ iface eth0 inet dhcp
 ###################
 # Local AP CONFIG #
 ###################
-allow-hotplug wlan0
+auto wlan0  
 iface wlan0 inet static
+    post-up /usr/sbin/hostapd -B /etc/hostapd/hostapd.conf
+    address 172.24.1.1
+    netmask 255.255.255.0
+    network 172.24.1.0
+    broadcast 172.24.1.255
+#    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
-address 172.24.1.1
-netmask 255.255.255.0
-network 172.24.1.0
-broadcast 172.24.1.255
+#Accessing Internet from Pi using USB Tethering of Android
+allow-hotplug usb0
+iface usb0 inet dhcp
 
 ######################
 # Internet Wifi Conf #
