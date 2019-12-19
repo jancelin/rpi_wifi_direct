@@ -9,6 +9,8 @@
 -A OUTPUT ! -d 127.0.0.0/8 -m addrtype --dst-type LOCAL -j DOCKER
 -A POSTROUTING -s 172.17.0.0/16 ! -o docker0 -j MASQUERADE
 -A POSTROUTING -o eth0 -j MASQUERADE
+-A POSTROUTING -o wlan0 -j MASQUERADE
+-A POSTROUTING -o wlan1 -j MASQUERADE
 -A POSTROUTING -o usb0 -j MASQUERADE
 -A DOCKER -i docker0 -j RETURN
 COMMIT
@@ -31,6 +33,8 @@ COMMIT
 -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 -A FORWARD -i usb0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
 -A FORWARD -i wlan0 -o usb0 -j ACCEPT
+-A FORWARD -i wlan1 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -i wlan0 -o wlan1 -j ACCEPT
 -A DOCKER-ISOLATION -j RETURN
 -A DOCKER-USER -j RETURN
 COMMIT
